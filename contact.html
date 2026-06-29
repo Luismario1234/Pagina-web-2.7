@@ -1,182 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto — T-REX ENTERPRISES</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto.</title>
+    
+    <link rel="icon" type="img/jpeg" href="img/icono.jpeg">
+    
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════════
-     T-REX TRANSITION OVERLAY
-══════════════════════════════════════════════════════ -->
-<div id="rex-overlay">
-  <div id="rex-container">
-    <div id="rex-roar" class="rex-roar">ROOAAARR!</div>
-    <img id="rex-gif" src="img/source.gif" alt="T-Rex corriendo">
-    <div class="rex-dust">
-      <span class="dust-particle"></span>
-      <span class="dust-particle"></span>
-      <span class="dust-particle"></span>
-      <span class="dust-particle"></span>
-      <span class="dust-particle"></span>
-    </div>
-  </div>
-</div>
+    <div class="juristic-container">
+        
+        <div class="main-content">
+            <div class="text-section">
+    
+                <h1 class="title-jurassic">¡Comunícate<br>con tus<br>nosotros!</h1>
+                <div class="section-rule">
+                    <div class="rule-diamond"></div>
+                </div>
+                <p class="subtitle-jurassic">Panel de Control</p>
+            </div>
 
-<!-- ══════════════════════════════════════════════════════
-     HEADER
-══════════════════════════════════════════════════════ -->
-<header>
-  <div class="header-inner">
-    <a class="logo" href="index.html">
-      <svg class="logo-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="22" cy="22" r="20" fill="none" stroke="#c8860a" stroke-width="1.5"/>
-        <text x="22" y="27" text-anchor="middle" font-size="18" fill="#c8860a" font-family="serif">🦖</text>
-      </svg>
-      <div class="logo-text">
-        T-REX ENTERPRISES
-        <span>DOMINANCE · CONTROL · LEGACY</span>
-      </div>
-    </a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="producto.html">Nuestro  producto</a>
-      <a href="menu.html">menu</a>
-      <a href="contact.html" class="nav-active">Contacto</a>
-    </nav>
-  </div>
-</header>
+            <div class="image-section">
+                <div class="image-wrapper">
+                    <img src="img/Iguana.jpeg">
+                    <div class="danger-stripe"></div>
+                </div>
+            </div>
+        </div>
 
-<!-- ══════════════════════════════════════════════════════
-     PAGE: CONTACT
-══════════════════════════════════════════════════════ -->
-<section style="background: linear-gradient(180deg, #0d0b07 0%, #1a1510 100%); min-height: 100vh; padding-top: 72px;">
-  <div class="section-wrap">
-    <div class="section-header">
-      <span class="section-eyebrow">Comunicación Directa</span>
-      <h2 class="section-title">Iniciar Negociación</h2>
-      <div class="section-rule"><div class="rule-diamond"></div></div>
-      <p style="font-family:'Crimson Text',serif; font-style:italic; color:var(--text-dim); margin-top:1.5rem; font-size:1.1rem;">
-        "No enviamos correos. Transmitimos rugidos. Pero por conveniencia, aceptamos formularios."
-      </p>
+        <div class="footer-assets">
+            
+            <div class="social-block">
+                <h3>CONEXIÓN SATELITAL</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn facebook" target="_blank">FACEBOOK</a>
+                    <a href="#" class="social-btn instagram" target="_blank">INSTAGRAM</a>
+                    <a href="#" class="social-btn whatsapp" target="_blank">WHATSAPP</a>
+                </div>
+            </div>
+
+            <div class="location-block">
+                <h3>COORDENADAS EN TIEMPO REAL</h3>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15505.523091764653!2d-89.224164!3d13.695306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQxJzQzLjEiTiA4OcKwMTMnMjcuMCJX!5e0!3m2!1ses!2s!4v1700000000000!5m2!1ses!2s" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="stone-grid stone-grid-2" style="align-items:start;">
-
-      <!-- Form -->
-      <div class="stone-panel" style="padding:3rem;">
-        <div class="stone-panel-accent"></div>
-        <div class="panel-title" style="margin-bottom:2rem;">📨 Canal de Transmisión</div>
-
-        <form id="contact-form">
-          <label for="name">Nombre del Expedicionista</label>
-          <input class="stone-input" id="name" type="text" placeholder="Su denominación Cretácica..." />
-
-          <label for="species">Especie / Empresa</label>
-          <input class="stone-input" id="species" type="text" placeholder="Homo sapiens, LLC..." />
-
-          <label for="email">Coordenadas Electromagnéticas</label>
-          <input class="stone-input" id="email" type="email" placeholder="rugido@sudominio.com" />
-
-          <label for="interest">Área de Interés</label>
-          <select class="stone-input" id="interest">
-            <option value="" disabled selected>Seleccione su territorio...</option>
-            <option>Gestión del Terror Corporativo</option>
-            <option>Expedición Paleontológica</option>
-            <option>Laboratorio de ADN Jurásico</option>
-            <option>Arquitectura en Piedra Viva</option>
-            <option>Derecho del Cretácico</option>
-            <option>Programa Elite APEX</option>
-          </select>
-
-          <label for="message">Transmisión de Datos</label>
-          <textarea class="stone-input" id="message" rows="5" placeholder="Exprese su necesidad de dominación aquí..."></textarea>
-
-          <button type="submit" class="btn btn-primary" style="width:100%; font-size:0.75rem;">
-            ENVIAR TRANSMISIÓN ✦
-          </button>
-        </form>
-      </div>
-
-      <!-- Info panels -->
-      <div style="display:flex; flex-direction:column; gap:1.5rem;">
-        <div class="stone-panel">
-          <div class="stone-panel-accent"></div>
-          <span class="panel-icon">📍</span>
-          <div class="panel-title">Cuartel General</div>
-          <p class="panel-text">
-            T-Rex Enterprises Tower<br>
-            <span style="color:var(--text-dim);">Badlands, Montana 59337<br>
-            (Coordenadas exactas: solo para APEX)</span>
-          </p>
-        </div>
-
-        <div class="stone-panel">
-          <div class="stone-panel-accent"></div>
-          <span class="panel-icon">📞</span>
-          <div class="panel-title">Línea de Rugidos</div>
-          <p class="panel-text">
-            +1 (REX) 065-0000<br>
-            <span style="color:var(--text-dim); font-style:italic; font-size:0.9rem;">
-              Disponible 24/7 — los depredadores no descansan.<br>
-              Tiempo de respuesta: 3 rugidos o menos.
-            </span>
-          </p>
-        </div>
-
-        <div class="stone-panel">
-          <div class="stone-panel-accent"></div>
-          <span class="panel-icon">🕐</span>
-          <div class="panel-title">Horario del Imperio</div>
-          <table class="rune-table">
-            <tbody>
-              <tr><td>Cretácico (Lun–Vie)</td><td style="color:var(--amber);">08:00 – 20:00</td></tr>
-              <tr><td>Jurásico (Sábado)</td><td style="color:var(--amber);">10:00 – 16:00</td></tr>
-              <tr><td>Triásico (Domingo)</td><td style="color:var(--rust);">RUGIDOS SOLO</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="stone-panel">
-          <div class="stone-panel-accent"></div>
-          <span class="panel-icon">⚠️</span>
-          <div class="panel-title">Protocolo de Visita</div>
-          <p class="panel-text">
-            Las visitas no anunciadas son bienvenidas —
-            siempre y cuando el visitante acepte ser evaluado
-            como posible aliado <em>o</em> como fuente de proteínas.
-            Recomendamos reservar con anticipación.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-logo">T-REX ENTERPRISES</div>
-  <div class="footer-tagline">Dominance · Control · Legacy · Since 65M B.C.</div>
-  <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="legacy.html">Legado</a>
-    <a href="dominion.html">Dominio</a>
-    <a href="expeditions.html">Expediciones</a>
-    <a href="contact.html">Contacto</a>
-  </div>
-  <p class="footer-copy">© 65,000,000 A.C. – Presente · T-Rex Enterprises · All territories dominated.</p>
-</footer>
-
-<div class="footprint-trail" aria-hidden="true">
-  <span class="footprint">🦶</span>
-  <span class="footprint">🦶</span>
-  <span class="footprint">🦶</span>
-  <span class="footprint">🦶</span>
-  <span class="footprint">🦶</span>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
