@@ -945,3 +945,17 @@ label {
   nav a { padding: 0.3rem 0.4rem; font-size: 0.55rem; }
 }
 
+.quienes-section {
+  background: linear-gradient(180deg, #1a1510 0%, #141008 100%);
+  padding: 70px 20px;
+}
+
+.quienes-grid {
+  max-width: 950px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.quienes-card {
+  min-height: 330px;
+}
