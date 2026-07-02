@@ -1,5 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurassic Fruit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════
+     T-REX TRANSITION OVERLAY
+══════════════════════════════════════════════════════ -->
+<div id="rex-overlay">
+  <div id="rex-container">
+    <div id="rex-roar" class="rex-roar">ROOAAARR!</div>
+    <img id="rex-gif" src="img/source.gif" alt="T-Rex corriendo">
+    <div class="rex-dust">
+      <span class="dust-particle"></span>
+      <span class="dust-particle"></span>
+      <span class="dust-particle"></span>
+      <span class="dust-particle"></span>
+      <span class="dust-particle"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════════════ -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <svg class="logo-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="20" fill="none" stroke="#c8860a" stroke-width="1.5"/>
+        <text x="22" y="27" text-anchor="middle" font-size="18" fill="#c8860a" font-family="serif">🦖</text>
+      </svg>
+      <div class="logo-text">
+        Jurassic Fruit
+        <span>Jurasicamente dulces e historicamente deliciosos</span>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="producto.html">Nuestro producto</a>
+      <a href="menu.html" class="nav-active">menu</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,9 +101,10 @@
 
                 <h3>CONTÁCTANOS</h3>
 
-                <div class="social-links" style="justify-content:center;">
+                <div class="social-block" style="height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+                <div class="social-links" style="display:flex; justify-content:center; width:100%;"></div>
 
-                    <a href="https://wa.me/503XXXXXXXX"
+                    <a href="https://wa.me/50369759128"
                        target="_blank"
                        class="social-btn whatsapp">
                         WHATSAPP
@@ -91,6 +143,22 @@
             </div>
 
         </div>
+        
+
+        <footer>
+  <div class="footer-logo">Jurassic Fruit</div>
+  <div class="footer-tagline">Jurasicamente dulces e historicamente deliciosos</div>
+  <div class="footer-links">
+    <a href="index.html">Inicio</a>
+    <a href="legacy.html">Legado</a>
+    <a href="dominion.html">Dominio</a>
+    <a href="expeditions.html">Expediciones</a>
+    <a href="contact.html">Contacto</a>
+  </div>
+  <p class="footer-copy">© 65,000,000 A.C. – Presente · Jurassic Fruit · Módulo 2.7.</p>
+</footer>
+
+<script src="script.js"></script>
 
     </div>
 
